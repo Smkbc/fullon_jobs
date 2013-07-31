@@ -1,16 +1,24 @@
 var request = require('request'),
-	format = require('util').format;
+	format = require('util').format,
+	config = require('./config');
 
 function start(){
-	console.log('http://localhost/jobs/getspreadsheet', function(error, response, body){
+	var url = format('%s/jobs/getspreadsheet', config.root_url);
+
+	console.log(format('requesting data from %s', url));
+
+	request(url, function(error, response, body){
 		if (!error && response.statusCode == 200) {
 			console.log('success');
 		} else {
-			console.log('error', error, response, body);
+			console.error('An Error Occurred');
+			console.error('error', error);
+			console.error('response', response);
+			console.error('body', body);
 		}
 	});
 
-	setTimeout(start, process.env.fullon_job_refresh_period);
+	setTimeout(start, config.refresh_period);
 }
 
 
