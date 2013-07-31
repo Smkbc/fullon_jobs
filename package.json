@@ -1,0 +1,15 @@
+{
+  "name": "fullonjobs",
+  "version": "0.0.0",
+  "description": "hits fullon urls to start a batch process",
+  "main": "request.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "request": "~2.25.0"
+  }
+}
