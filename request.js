@@ -10,13 +10,10 @@ function start(){
 
 	console.log(format('requesting data from %s', url));
 
-	//var r = request.get(url).auth('username', 'password');
-
-	//console.log(r);
-
 	request({
 		uri: url,
 		auth: {
+			//TODO: Hash values?
 			user: config.job_username,
 			pass: config.job_password
 		}
