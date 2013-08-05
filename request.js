@@ -18,7 +18,7 @@ function start(){
 			pass: config.job_password
 		}
 	}, function(error, response, body){
-		if (!error && response.statusCode == 200) {
+		if (!error && response.statusCode === 200) {
 			successCount++;
 		} else {
 			failureCount++;
