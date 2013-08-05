@@ -17,7 +17,7 @@ _.each(config, function(item, i) {
 
 if(errors.length) {
 	//crash application
-	throw new Error(format('missing config entries for: %j', errors));
+	console.warn(format('missing config entries for: %j', errors));
 }
 
 module.exports = config;
