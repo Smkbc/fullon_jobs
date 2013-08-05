@@ -1,16 +1,21 @@
 {
-  "name": "fullonjobs",
-  "version": "0.0.0",
-  "description": "hits fullon urls to start a batch process",
-  "main": "request.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": "",
-  "author": "",
-  "license": "BSD",
-  "dependencies": {
-    "request": "~2.25.0",
-    "underscore": "~1.5.1"
-  }
+	"name": "fullonjobs",
+	"version": "0.0.0",
+	"description": "hits fullon urls to start a batch process",
+	"main": "request.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+		"start": "node request.js"
+	},
+	"repository": "",
+	"author": "Alex Reardon",
+	"license": "BSD",
+	"dependencies": {
+		"request": "~2.25.0",
+		"underscore": "~1.5.1"
+	},
+	"engines": {
+		"node": "0.10.x",
+		"npm": "1.2.x"
+	}
 }
